@@ -17,10 +17,10 @@ export default function App() {
         <AppStateProvider>
             <HashRouter>
                 <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route index element={<Chat />} />
-                        <Route path="*" element={<NoPage />} />
-                    </Route>
+                    <Route path="/" element={<Chat />}>
+{/*                         <Route index element={<Chat />} /> */}
+{/*                         <Route path="*" element={<NoPage />} />
+                    </Route> */}
                 </Routes>
             </HashRouter>
         </AppStateProvider>
